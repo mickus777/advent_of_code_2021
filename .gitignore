@@ -1,6 +1,15 @@
 # Prerequisites
 *.d
 
+# Local
+data
+
+# Visual studio
+.vs
+*.filters
+*.user
+Debug
+
 # Compiled Object files
 *.slo
 *.lo
