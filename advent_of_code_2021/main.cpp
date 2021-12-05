@@ -4,12 +4,20 @@
 #include <iostream>
 #include <string>
 
-std::string compute(int day, const std::string inputFile, bool verbose)
+std::string compute(int day, int part, const std::string inputFile, bool verbose)
 {
     switch (day)
     {
     case 1:
-        return mbk::advent_of_code_2021::day1(inputFile, verbose);
+        switch (part)
+        {
+        case 1:
+            return mbk::advent_of_code_2021::day1_1(inputFile, verbose);
+        case 2:
+            return mbk::advent_of_code_2021::day1_2(inputFile, verbose);
+        default:
+            return "Not known yet!";
+        }
     default:
         return "Not know yet!";
     }
@@ -17,18 +25,19 @@ std::string compute(int day, const std::string inputFile, bool verbose)
 
 int main(int argc, char** argv)
 {
-    if (argc < 3)
+    if (argc < 4)
         return 1;
 
     int day = std::stoi(argv[1]);
-    std::string inputFile = argv[2];
+    int part = std::stoi(argv[2]);
+    std::string inputFile = argv[3];
 
     bool verbose = false;
-    if (argc > 3)
-        if (argv[3] == std::string("v"))
+    if (argc > 4)
+        if (argv[4] == std::string("v"))
             verbose = true;
 
-    std::cout << "Day " << day << ": " << compute(day, inputFile, verbose) << std::endl;
+    std::cout << "Day " << day << " part " << part << ": " << compute(day, part, inputFile, verbose) << std::endl;
 
     return 0;
 }
