@@ -21,6 +21,8 @@ namespace mbk
         std::string day6_2(const std::string& input, bool verbose = false);
         std::string day7_1(const std::string& input, bool verbose = false);
         std::string day7_2(const std::string& input, bool verbose = false);
+        std::string day8_1(const std::string& input, bool verbose = false);
+        std::string day8_2(const std::string& input, bool verbose = false);
     }
 }
 
