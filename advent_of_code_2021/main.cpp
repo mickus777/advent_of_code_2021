@@ -88,6 +88,26 @@ std::string compute(int day, int part, const std::string inputFile, bool verbose
         default:
             return "Not known yet!";
         }
+    case 9:
+        switch (part)
+        {
+        case 1:
+            return mbk::advent_of_code_2021::day9_1(inputFile, verbose);
+        case 2:
+            return mbk::advent_of_code_2021::day9_2(inputFile, verbose);
+        default:
+            return "Not known yet!";
+        }
+    case 10:
+        switch (part)
+        {
+        case 1:
+            return mbk::advent_of_code_2021::day10_1(inputFile, verbose);
+        case 2:
+            return mbk::advent_of_code_2021::day10_2(inputFile, verbose);
+        default:
+            return "Not known yet!";
+        }
     default:
         return "Not know yet!";
     }
