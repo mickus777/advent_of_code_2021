@@ -143,6 +143,7 @@
     <ClCompile Include="day10.cpp" />
     <ClCompile Include="day11.cpp" />
     <ClCompile Include="day12.cpp" />
+    <ClCompile Include="day13.cpp" />
     <ClCompile Include="day2.cpp" />
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4.cpp" />
@@ -151,10 +152,12 @@
     <ClCompile Include="day7.cpp" />
     <ClCompile Include="day8.cpp" />
     <ClCompile Include="day9.cpp" />
+    <ClCompile Include="fileutilities.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="days.h" />
+    <ClInclude Include="fileutilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
