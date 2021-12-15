@@ -3,6 +3,7 @@
 
 #include <list>
 #include <string>
+#include <vector>
 
 namespace mbk
 {
@@ -11,6 +12,7 @@ namespace mbk
         namespace file_utilities
         {
             std::list<std::string> readLines(const std::string& path);
+            std::vector<std::vector<size_t>> readMatrix(const std::string& path);
         }
     }
 }

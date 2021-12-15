@@ -9,6 +9,7 @@ data
 *.filters
 *.user
 Debug
+Release
 
 # Compiled Object files
 *.slo
