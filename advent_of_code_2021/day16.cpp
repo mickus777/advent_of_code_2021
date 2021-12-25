@@ -200,7 +200,6 @@ namespace mbk
                     if (subValue > value)
                         value = subValue;
                 }
-                ,
                 if (verbose)
                     std::cout << ")";
                 break;
